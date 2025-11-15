@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  keeweb:
+      container_name: keeweb
+      image: ghcr.io/keeweb/keeweb:latest       # Github image
+    # image: keeweb/keeweb:latest               # Dockerhub image
+      restart: unless-stopped
+      ports:
+          - "4431:443"
+          - "8031:80"
+      volumes:
+          - ./keeweb:/config
+      environment:
+          - PUID=1000
+          - PGID=1000
+          - TZ=Etc/UTC

@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: alanbarros-keeweb
+name: KeeWeb
+tagline: Replace this tagline with your app's tagline
+icon: https://avatars.githubusercontent.com/u/18244763
+category: Produtivity
+version: "1.0.0"
+port: 8031
+description: >-
+  KeeWeb is a browser and desktop password manager which is capable of opening up existing KeePass database `kdbx` files, or creating new vaults to store your important credentials in. 
+  
+  It is compatible with KeePass 1.x and 2.x formats and supports local files, as well as files stored in various cloud storage services.
+
+developer: keeweb
+website: https://keeweb.info/
+submitter: Alan Barros
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/keeweb/keeweb
+support: https://github.com/keeweb/keeweb/issues
+gallery:
+  - https://github.com/keeweb/keeweb/blob/master/img/screenshot.png
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
