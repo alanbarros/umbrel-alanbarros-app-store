@@ -5,7 +5,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: alanbarros-keeweb_web_1
-      APP_PORT: 8031
+      APP_PORT: 80
 
   server:
     container_name: alanbarros-keeweb_web_1
