@@ -7,6 +7,7 @@ services:
       APP_HOST: alanbarros-keeweb_web_1
       APP_PORT: 443
       PROXY_AUTH_ADD: 'false'
+      PROXY_HTTPS: 'true'       # <--- Certifica que requests de proxy para o backend são via HTTPS
     container_name: alanbarros-keeweb_app_proxy_1
     
   web:
