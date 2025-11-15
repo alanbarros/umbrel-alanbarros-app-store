@@ -5,9 +5,8 @@ services:
   app_proxy:
     environment:
       APP_HOST: alanbarros-keeweb_web_1
-      APP_PORT: 443
+      APP_PORT: 80
       PROXY_AUTH_ADD: 'false'
-      PROXY_HTTPS: 'true'       # <--- Certifica que requests de proxy para o backend são via HTTPS
     container_name: alanbarros-keeweb_app_proxy_1
     
   web:
@@ -15,6 +14,8 @@ services:
     image: ghcr.io/keeweb/keeweb:latest       # Github image
   # image: keeweb/keeweb:latest               # Dockerhub image
     restart: unless-stopped
+    ports:
+     - "8032:443"
     volumes:
         - ${APP_DATA_DIR}/keeweb:/config
     environment:
