@@ -5,16 +5,13 @@ services:
   app_proxy:
     environment:
       APP_HOST: alanbarros-keeweb_web_1
-      APP_PORT: 8031
+      APP_PORT: 80
 
-  web:
-    container_name: keeweb
+  server:
+    container_name: alanbarros-keeweb_web_1
     image: ghcr.io/keeweb/keeweb:latest       # Github image
   # image: keeweb/keeweb:latest               # Dockerhub image
     restart: unless-stopped
-    ports:
-        - "4431:443"
-        - "8031:80"
     volumes:
         - ${APP_DATA_DIR}/keeweb:/config
     environment:

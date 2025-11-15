@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: alanbarros-keeweb
-name: KeeWeb
-tagline: Replace this tagline with your app's tagline
+name: KeeWebReplace
+tagline: Free cross-platform password manager compatible with KeePass
 icon: https://avatars.githubusercontent.com/u/18244763
 category: Produtivity
 version: "1.0.0"
-port: 8031
+port: 80
 description: >-
   KeeWeb is a browser and desktop password manager which is capable of opening up existing KeePass database `kdbx` files, or creating new vaults to store your important credentials in. 
   
