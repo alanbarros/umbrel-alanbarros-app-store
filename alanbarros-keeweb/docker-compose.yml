@@ -12,8 +12,6 @@ services:
     image: ghcr.io/keeweb/keeweb:latest       # Github image
   # image: keeweb/keeweb:latest               # Dockerhub image
     restart: unless-stopped
-    ports:
-      - "8031:80"
     volumes:
         - ${APP_DATA_DIR}/keeweb:/config
     environment:
