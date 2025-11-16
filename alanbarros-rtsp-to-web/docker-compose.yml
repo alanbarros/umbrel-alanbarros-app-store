@@ -1,20 +1,13 @@
-version: '3.7'
+version: "3.7"
 services:
-  app_proxy:
-    environment:
-      APP_HOST: alanbarros-rtsptoweb_web_1
-      APP_PORT: 8083
-      PROXY_AUTH_ADD: 'false'
-    container_name: alanbarros-rtsptoweb_app_proxy_1
   rtsp-to-web:
     image: ghcr.io/deepch/rtsptoweb:latest
     container_name: alanbarros-rtsptoweb_web_1
     network_mode: "host"
     #volumes:
-      # Descomente e ajuste o caminho caso queira usar um arquivo de configuração personalizado
-      # - ./config.json:/config/config.json
+    # Descomente e ajuste o caminho caso queira usar um arquivo de configuração personalizado
+    # - ./config.json:/config/config.json
     restart: unless-stopped
     #environment:
-      # Adicione variáveis de ambiente aqui, se necessário
-      # Exemplo: DEBUG=true
-
+    # Adicione variáveis de ambiente aqui, se necessário
+    # Exemplo: DEBUG=true
