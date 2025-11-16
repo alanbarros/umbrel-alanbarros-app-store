@@ -5,7 +5,7 @@ tagline: RTSP Stream to WebBrowser
 icon: https://raw.githubusercontent.com/alanbarros/RTSPtoWeb/refs/heads/master/web/static/img/lens.svg
 category: Produtivity
 version: "1.0.0"
-port: 8083
+port: 8084
 description: >-
   RTSPtoWeb converts your RTSP streams to formats consumable in a web browser like MSE (Media Source Extensions), WebRTC, or HLS. It's fully native Golang without the use of FFmpeg or GStreamer!
 
